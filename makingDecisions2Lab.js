@@ -174,11 +174,23 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 
 //Code Here
 
-// switch(letterGrade) {
-//   case A :
-//     break:
-// }
-
+switch(letterGrade) {
+  case "A":
+    console.log("The student is doing excellently.");
+    break;
+  case "B":
+    console.log("The student is doing well.");
+    break;
+  case "C":
+    console.log("The student is doing alright.");
+    break;
+  case "D":
+    console.log("The student is not doing very well");
+    break;
+  case "F":
+    console.log("The student is failing")
+  }
+  
 
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
@@ -205,19 +217,22 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-let numb = 1
-let D = "Dev";
-let M = "mountain" 
+let numb = 1;
+let d = "Dev";
+let mount = "mountain"; 
 
-while(numb < 100){
-  if(numb % 3 === 0 && numb % 5){
-    console.log(D + M)
+while(numb <= 100){
+  if(numb % 3 === 0 && numb % 5 === 0){
+    console.log(d + mount)
   }
   else if (numb % 3 === 0){
-    console.log(D)
+    console.log(d)
   }
   else if(numb % 5 === 0){
-    console.log(M)
+    console.log(mount)
+  }
+  else{
+    console.log(numb)
   }
   numb++
 }
